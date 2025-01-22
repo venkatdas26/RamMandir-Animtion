@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Fullscreen 9:16 Aspect Ratio */
+#dark-frame, #light-frame, #idol-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+  opacity: 0; /* Hidden initially */
+}
+
+img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Diya Button Styling */
+#diya-button {
+  position: absolute;
+  bottom: 14%;
+  left: 48%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  display: none; /* Hidden initially */
+}
+
+#diya-button img {
+  width: 100px;
+  height: auto;
+}
+
+#diya-button p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0 0 5px #ff7700;
+}
+
+/* Celebration Text */
+#celebration-text {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff7700;
+  display: none;
+}
+
+/* Black Overlay (used for transitions) */
+#black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 10;
+  opacity: 0;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

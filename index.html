@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Mandir Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Dark Temple Image (Frame 1) -->
+    <div id="dark-frame">
+        <img src="temple_dark.jpg" alt="Dark Temple">
+    </div>
+
+    <!-- Diya Button (Frame 2) -->
+    <div id="diya-button" onclick="startAnimation()">
+        <img src="diya.png" alt="Diya Button">
+        <p>Click Here</p>
+    </div>
+
+    <!-- Lighted Temple Image (Frame 3) -->
+    <div id="light-frame">
+        <img src="temple_light1.jpg" alt="Lighted Temple">
+        <p id="celebration-text">Celebrating 1 Year of Ram Mandir</p>
+    </div>
+
+    <!-- Idol Frame (Frame 6-7) -->
+    <div id="idol-frame">
+        <img src="RamLalla.png" alt="Ram Lalla Idol">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
